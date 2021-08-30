@@ -11,14 +11,19 @@ namespace Core
                 {2, "thirty" },
                 {3, "fourty" }
             };
+
         public int Player1Score { get; set; } = 0;
         public string Player1ScoreText { get => scoreNames[Player1Score]; }
+        
         public int Player2Score { get; set; } = 0;
         public string Player2ScoreText { get => scoreNames[Player2Score]; }
+        
         public string Score { get => CalculateGameScore(); }
+
         public TennisGame()
         {
         }
+
         private string CalculateGameScore()
         {
             if ((Player1Score == Player2Score) && Player1Score >= 3)
