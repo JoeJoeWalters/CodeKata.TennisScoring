@@ -1,7 +1,7 @@
-using System;
-using Xunit;
 using Core;
 using FluentAssertions;
+using Xunit;
+
 namespace Tests
 {
     public class TennisGameTests
